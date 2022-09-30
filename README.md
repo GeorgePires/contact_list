@@ -1,24 +1,11 @@
-# README
+<div align="center">
+    <h1>
+     Contact list
+    </h1>
+</div>
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
-
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+<br>
+<div align="center">
+    <img alt="Contact-list-demo" src=".github/preview.png" width="95%" style="border-radius:10px">
+</div>
+<br>
