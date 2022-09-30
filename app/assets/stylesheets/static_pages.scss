@@ -29,11 +29,15 @@ $links-color: #0a548cfc;
     background-color: $header-color;
 }
 
+.logo-top {
+    margin-left: 3rem;
+}
+
 .navbar-brand {
     font-weight: bold;
     font-size: x-large;
-    margin-left: 11px;
-    margin-left: 3em;
+    margin-left: 1rem;
+    
 }
 
 .link {
