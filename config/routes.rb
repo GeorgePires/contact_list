@@ -3,5 +3,5 @@ Rails.application.routes.draw do
   root to: "static_pages#index"
 
   get 'about', to: 'static_pages#about'
-  get 'contact', to: 'static_pages#contact'
+  get 'contac', to: 'static_pages#contac'
 end
