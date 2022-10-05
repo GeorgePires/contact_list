@@ -2,99 +2,94 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-
- /**! RESET BROWSER ****/
- * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+/**! RESET BROWSER ****/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
- $main-color: #0a548cfc;
- $color-dark: #1D2231;
- $text-grey: #8390A2;
- $top-color: #2376b5fc;
- 
+$main-color: #0a548cfc;
+$color-dark: #1d2231;
+$text-grey: #8390a2;
+$top-color: #2376b5fc;
 
- /**? TEST COLOR **/
-$header-color: #1A2E40;
+/**? TEST COLOR **/
+$header-color: #1a2e40;
 $links-color: #0a548cfc;
 
-
 .jumbotron {
-    background-color: #d4dbe1 !important;
+  background-color: #d4dbe1 !important;
 }
 
 #bg {
-    background-color: $header-color;
+  background-color: $header-color;
 }
 
 .logo-top {
-    margin-left: 3rem;
+  margin-left: 3rem;
 }
 
 .navbar-brand {
-    font-weight: bold;
-    font-size: x-large;
-    margin-left: 1rem;
-    
+  font-weight: bold;
+  font-size: x-large;
+  margin-left: 1rem;
 }
 
 .link {
-    text-decoration-line: none !important;
-    font-weight: 200em;
+  text-decoration-line: none !important;
+  font-weight: 200em;
 }
 
 .btn-outline-primary {
-    color: #fff;
-    background-color: transparent;
-    background-image: none;
-    border-color: $links-color;
-  }
+  color: #fff;
+  background-color: transparent;
+  background-image: none;
+  border-color: $links-color;
+}
 
-  .btn-outline-primary:hover {
-    color: #fff;
-    background-color: #2b8ee4;
-    border-color: $links-color;
-  }
+.btn-outline-primary:hover {
+  color: #fff;
+  background-color: #2b8ee4;
+  border-color: $links-color;
+}
 
 .btn-primary {
-    color: #fff;
-    background-color: $links-color;
-    border-color: $links-color;
-  }
- 
-  .btn-primary:hover {
-    color: #fff;
-    background-color: #2b8ee4;
-    border-color: #2b8ee4;
-  }
+  color: #fff;
+  background-color: $links-color;
+  border-color: $links-color;
+}
 
+.btn-primary:hover {
+  color: #fff;
+  background-color: #2b8ee4;
+  border-color: #2b8ee4;
+}
 
 footer {
-    margin-top: 45px;
-    padding-top: 5px;
-    border-top: 1px solid $text-grey;
+  margin-top: 45px;
+  padding-top: 5px;
+  border-top: 1px solid $text-grey;
+  color: $color-dark;
+
+  a {
     color: $color-dark;
 
-    a {
-        color: $color-dark;
-    
-        &:hover {
-            color: $color-dark;
-        }
+    &:hover {
+      color: $color-dark;
     }
+  }
 
-    small {
-        float: left;
-    }
+  small {
+    float: left;
+  }
 
-    ul {
-        float: right;
-        list-style: none;
-        li {
-            float: left;
-            margin-left: 15px;
-        }
+  ul {
+    float: right;
+    list-style: none;
+    li {
+      float: left;
+      margin-left: 15px;
     }
+  }
 }
