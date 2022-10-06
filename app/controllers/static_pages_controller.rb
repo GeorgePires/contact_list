@@ -1,11 +1,9 @@
 class StaticPagesController < ApplicationController
-    def index
-        @nome = "Bem Vindo"
-    end
+  def index
+    @nome = 'Bem Vindo'
+  end
 
-    def about
-    end
+  def about; end
 
-    def contact
-    end
+  def contac; end
 end
