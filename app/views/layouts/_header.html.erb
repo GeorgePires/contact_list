@@ -11,21 +11,22 @@
     <% if user_signed_in? %>
       <div class="col-md-2 text-end">
         <%= link_to destroy_user_session_path, method: :delete, class: "link" do %>
-      <button type="button" class="btn btn-outline-primary text-white">Sair</button>
+        <button type="button" class="btn btn-outline-primary text-white">Sair</button>
+      </div>
         <% end %>
     <% else %>
+      <div class="col-md-2 text-end">
+        <%= link_to new_user_session_path, class: "link" do %>
+          <button type="button" class="btn btn-outline-primary text-white">Entrar</button>
+        <% end %>
+      
 
-      <%= link_to new_user_session_path, class: "link" do %>
-      <button type="button" class="btn btn-outline-primary text-white">Entrar</button>
-      <% end %>
-
-      <%= link_to new_user_registration_path, class: "link" do %>
-      <button type="button" class="btn btn-primary">Nova Conta</button>
-      <% end %>
+        <%= link_to new_user_registration_path, class: "link" do %>
+          <button type="button" class="btn btn-primary">Nova Conta</button>
+        <% end %>
     <% end %>
    
-
-    </div>
+    </div>  
   </div>
 </nav>
 
