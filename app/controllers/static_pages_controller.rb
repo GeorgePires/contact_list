@@ -1,6 +1,6 @@
 class StaticPagesController < ApplicationController
   def index
-    @nome = 'Welcome'
+    @title = 'Welcome to your contact list'
   end
 
   def about; end
