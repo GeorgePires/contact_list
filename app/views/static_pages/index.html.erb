@@ -9,13 +9,13 @@
     <% if user_signed_in? %>
       <%= link_to new_contact_path do %>
           <button type="button" role="button" class="btn btn-lg btn-primary text-white">
-            Novo Contato &raquo;
+            New Contact &raquo;
           </button>
       <% end %>
     <% else %>
       <%= link_to new_user_registration_path do %>
           <button type="button" role="button" class="btn btn-lg btn-primary text-white">
-            Criar Conta &raquo;
+            Create Account &raquo;
           </button>
       <% end %>
     <% end %>

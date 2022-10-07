@@ -1,6 +1,6 @@
 class StaticPagesController < ApplicationController
   def index
-    @nome = 'Bem Vindo'
+    @nome = 'Welcome'
   end
 
   def about; end
