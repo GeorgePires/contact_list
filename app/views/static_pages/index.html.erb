@@ -1,7 +1,23 @@
 <main role="main" class="container">
-    <div class="jumbotron">
-      <h1><%= @nome %>, <%= current_user.try(:name) %></h1>
-      <p class="lead">This example is a quick exercise to illustrate how the top-aligned navbar works. As you scroll, this navbar remains in its original position and moves with the rest of the page.</p>
-      <a class="btn btn-lg btn-primary" href="" role="button"> Criar Conta &raquo;</a>
-    </div>
+  <div class="jumbotron">
+    <h1><%= @title %> <%= current_user.try(:name)  %></h1>
+    <p class="lead">
+      This example is a quick exercise to illustrate how the top-aligned navbar
+      works. As you scroll, this navbar remains in its original position and
+      moves with the rest of the page.
+    </p>
+    <% if user_signed_in? %>
+      <%= link_to new_contact_path do %>
+          <button type="button" role="button" class="btn btn-lg btn-primary text-white">
+            New Contact &raquo;
+          </button>
+      <% end %>
+    <% else %>
+      <%= link_to new_user_registration_path do %>
+          <button type="button" role="button" class="btn btn-lg btn-primary text-white">
+            Create Account &raquo;
+          </button>
+      <% end %>
+    <% end %>
+  </div>
 </main>

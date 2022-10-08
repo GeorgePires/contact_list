@@ -20,6 +20,11 @@ $links-color: #0a548cfc;
 
 .jumbotron {
   background-color: #d4dbe1 !important;
+
+}
+
+.jumbotron p {
+  margin-top: revert
 }
 
 #bg {
@@ -28,6 +33,10 @@ $links-color: #0a548cfc;
 
 .logo-top {
   margin-left: 3rem;
+}
+
+.logo-user {
+  margin-inline: 8px;
 }
 
 .navbar-brand {

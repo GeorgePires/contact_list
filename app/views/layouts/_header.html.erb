@@ -6,35 +6,25 @@
     <span class="navbar-toggler-icon"></span>
   </button>
   <div class="collapse navbar-collapse" id="navbarCollapse">
-    <ul class="navbar-nav mr-auto">
-    </ul>
+    <div class="navbar-nav mr-auto">
+    </div>
     <% if user_signed_in? %>
       <div class="col-md-2 text-end">
-        <%= link_to destroy_user_session_path, method: :delete, class: "link" do %>
-        <button type="button" class="btn btn-outline-primary text-white">Sair</button>
+        <%= render "layouts/header_login" %>
       </div>
-        <% end %>
     <% else %>
       <div class="col-md-2 text-end">
+
         <%= link_to new_user_session_path, class: "link" do %>
-          <button type="button" class="btn btn-outline-primary text-white">Entrar</button>
+          <button type="button" class="btn btn-outline-primary text-white">Login</button>
         <% end %>
-      
 
         <%= link_to new_user_registration_path, class: "link" do %>
-          <button type="button" class="btn btn-primary">Nova Conta</button>
+          <button type="button" class="btn btn-primary">Create an Account!</button>
         <% end %>
     <% end %>
-   
-    </div>  
+
+    </div>
   </div>
 </nav>
 
-<nav class="navbar navbar-inverse navbar-static-top">
-  <div class="container-fluid">
-    <span class="sr-only">Toggle navigation</span>
-    <span class="icon-bar"></span>
-    <span class="icon-bar"></span>
-    <span class="icon-bar"></span>
-  </div>
-</nav>
