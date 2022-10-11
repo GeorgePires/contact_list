@@ -22,8 +22,8 @@ development: &defaults
   pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
   reconnect: true
   reaping_frequency: 10
-  username: dev
-  password: 1717
+  username: <%= ENV['DATABASE_USER'] %>
+  password: <%= ENV['DATABASE_PASSWORD'] %>
 
 test:
   <<: *defaults
