@@ -57,6 +57,7 @@ group :development do
   gem 'spring'
   gem 'spring-watcher-listen', '~> 2.0.0'
   gem 'rails_best_practices', '~> 1.23', '>= 1.23.2', require: false
+  gem 'rspec-rails', '~> 5.0.0'
 end
 
 group :test do
