@@ -1,11 +1,15 @@
 <main role="main" class="container">
   <div class="jumbotron">
-    <h1><%= @title %> <%= current_user.try(:name)  %></h1>
-    <p class="lead">
-      This example is a quick exercise to illustrate how the top-aligned navbar
-      works. As you scroll, this navbar remains in its original position and
-      moves with the rest of the page.
-    </p>
+    <h1> 
+      Hi <%= image_tag 'https://raw.githubusercontent.com/kaueMarques/kaueMarques/master/hi.gif', 
+      class: "icon-index" %>, <%= current_user.try(:name)%>!
+    </h1>
+    <div>
+      <h1><%= @title %></h1>
+      <p class="lead">
+        Create, customize and manage your contact list from anywhere.
+      </p>
+    </div>
     <% if user_signed_in? %>
       <%= link_to new_contact_path do %>
           <button type="button" role="button" class="btn btn-lg btn-primary text-white">

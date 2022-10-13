@@ -11,12 +11,20 @@
 
 $main-color: #0a548cfc;
 $color-dark: #1d2231;
-$text-grey: #8390a2;
+$text-grey: #5a5d62;
 $top-color: #2376b5fc;
 
 /**? TEST COLOR **/
 $header-color: #1a2e40;
 $links-color: #0a548cfc;
+
+.lead {
+  color: $text-grey;
+}
+
+.icon-index {
+  width: 48px;
+}
 
 .jumbotron {
   background-color: #d4dbe1 !important;
