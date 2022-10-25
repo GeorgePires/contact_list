@@ -1,36 +1,36 @@
 <br>
 <section>
-  <h1>Contacts</h1>
-  <div>
-    <table class="table align-middle mb-0 bg-white">
-      <thead class="bg-light">
+  <h1>My Contacts</h1>
+  <table class="table align-middle mb-0 bg-white">
+    <thead class="bg-light">
+      <tr>
+        <th>Name</th>
+        <th>Phone</th>
+        <th>Actions</th>
+      </tr>
+    </thead>
+    <tbody>
+      <% @contacts.each do |contact| %>
         <tr>
-          <th>Name</th>
-          <th>Phone</th>
-          <th>Actions</th>
-        </tr>
-      </thead>
-      <tbody>
-        <% @contacts.each do |contact| %>
-          <tr>
-            <td><%= contact.try(:name) %></td>
-            <td><%= contact.try(:phone) %></td>
-            <td>
-              <%= link_to '#', {"data-bs-toggle" => "modal",
+          <td><%= contact.try(:name) %></td>
+          <td><%= contact.try(:phone) %></td>
+          <td>
+            <%= link_to '#', {"data-bs-toggle" => "modal",
                          "data-bs-target" => "#Modal-", class: "btn btn-info btn-circle"} do %>
-                <i class="ti-gallery"></i>
-              <% end %>
-              <%= link_to edit_contact_path(contact), class: "btn btn-warning btn-circle"  do %>
-                <i class="ti-pencil-alt"></i>
-              <% end %>
-              <%= link_to contact, method: :delete, data: { confirm: 'Are you sure?' } , class: "btn btn-danger btn-circle" do %>
-                <i class="ti-trash"></i>
-              <% end %>
-            </td>
-          </tr>
-        <% end %>
-      </tbody>
-    </table>
-  </div>
+              <i class="ti-gallery"></i>
+            <% end %>
+            <%= link_to edit_contact_path(contact), class: "btn btn-warning btn-circle"  do %>
+              <i class="ti-pencil-alt"></i>
+            <% end %>
+            <%= link_to contact, method: :delete, data: { confirm: 'Are you sure?' } , class: "btn btn-danger btn-circle" do %>
+              <i class="ti-trash"></i>
+            <% end %>
+          </td>
+        </tr>
+      <% end %>
+    </tbody>
+  </table>
+  <%= paginate @contacts %>
+
 </section>
-<%= link_to 'New Contact', new_contact_path, class: 'btn btn-primary' %>
+  <%= link_to 'New Contact', new_contact_path, class: 'btn btn-primary' %>

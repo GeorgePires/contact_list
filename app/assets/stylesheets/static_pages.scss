@@ -18,6 +18,10 @@ $top-color: #2376b5fc;
 $header-color: #1a2e40;
 $links-color: #0a548cfc;
 
+#bg {
+  background-color: $header-color;
+}
+
 .lead {
   color: $text-grey;
 }
@@ -35,8 +39,8 @@ $links-color: #0a548cfc;
   margin-top: revert
 }
 
-#bg {
-  background-color: $header-color;
+.bg-light {
+  background-color: #dbdfe3 !important;
 }
 
 .logo-top {
