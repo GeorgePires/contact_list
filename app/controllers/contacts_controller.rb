@@ -4,7 +4,7 @@ class ContactsController < ApplicationController
 
   # GET /contacts or /contacts.json
   def index
-    @contacts = current_user.contacts
+    @contacts = current_user.contacts.list
   end
 
   # GET /contacts/1 or /contacts/1.json
