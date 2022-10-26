@@ -71,3 +71,6 @@ gem 'devise'
 gem 'simple_form'
 gem 'kaminari'
 gem 'prettier'
+
+gem 'carrierwave', '~> 2.2', '>= 2.2.2'
+gem 'fog-aws', '~> 3.15'
