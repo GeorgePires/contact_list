@@ -5,4 +5,6 @@ class Contact < ApplicationRecord
     validates :phone, presence: true
 
     scope :list, -> { order("created_at DESC")}
+
+    mount_uploader :avatar, AvatarUploader
 end
