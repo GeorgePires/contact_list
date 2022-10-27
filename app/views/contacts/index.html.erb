@@ -4,6 +4,7 @@
   <table class="table align-middle mb-0 bg-white">
     <thead class="bg-light">
       <tr>
+        <th>Avatar</th>
         <th>Name</th>
         <th>Phone</th>
         <th>Actions</th>
@@ -12,6 +13,7 @@
     <tbody>
       <% @contacts.each do |contact| %>
         <tr>
+          <td><%= image_tag(contact.try(:avatar_url), size: "55x55") if contact.avatar? %></td>
           <td><%= contact.try(:name) %></td>
           <td><%= contact.try(:phone) %></td>
           <td>
