@@ -8,30 +8,25 @@
 
 ## 💻 Projeto
 
-Contact List! crie, personalize e gerencie sua lista de contatos de qualquer lugar.
+ Contact list! Crie, personalize e gerencie sua lista de contatos de qualquer lugar.
 
 ## 🚀 Tecnologias
 
-<table>
-  <tr>
-    <td>Ruby version</td>
-    <td>
-      2.6.3
-    </td>
-  </tr>
-  <tr>
-    <td>Rails version</td>
-    <td>
-      5.2.8
-    </td>
-  </tr>
-  <tr>
-    <td>Database</td>
-    <td>
-     PostgreSQL 
-    </td>
-  </tr>
-</table>
+|                |             |     Gems       |
+|----------------|-------------|----------------|
+| Ruby version   | 2.6.3       | Bootstrap 4    |
+| Rails version  | 5.2.8       | Devise         | 
+| Database       | PostgreSQL  | Simple Form    |
+|                |             | Kaminari       | 
+|                |             | Carrierwave    | 
+|                |             | Fog-AWS        |
+                                           
+
+## 💥 Funcionalidades
+
+- [x] Cadastro e Login de usuários.
+- [x] Gerenciamento de contatos - CRUD de contatos. 
+- [x] Customização do perfil - Upload de arquivos na AWS S3.
 
 ## ⚡ Instalando o Projeto
 
