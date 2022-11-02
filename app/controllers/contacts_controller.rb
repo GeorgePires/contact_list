@@ -26,7 +26,7 @@ class ContactsController < ApplicationController
       if @contact.save
         format.html do
           redirect_to contact_url(@contact),
-                      notice: 'Contact was successfully created.'
+                      notice: "Contact was successfully created: #{@contact.name}."
         end
         format.json { render :show, status: :created, location: @contact }
       else

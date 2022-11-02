@@ -1,14 +1,12 @@
-
-
-<p>
-  <strong>Name:</strong>
-  <%= @contact.name %>
-</p>
-
-<p>
-  <strong>Phone:</strong>
-  <%= @contact.phone %>
-</p>
-
-<%= link_to 'Edit', edit_contact_path(@contact) %> |
-<%= link_to 'Back', contacts_path %>
+<div class="jumbotron">
+  <p>
+    <strong>Name:</strong>
+    <%= @contact.name %>
+  </p>
+  <p>
+    <strong>Phone:</strong>
+    <%= @contact.phone %>
+  </p>
+  <%= link_to 'Edit', edit_contact_path(@contact), class: 'btn  btn-warning btn-sm'%> |
+  <%= link_to 'Back', contacts_path, class: 'btn btn-secondary btn-sm' %>
+<div>

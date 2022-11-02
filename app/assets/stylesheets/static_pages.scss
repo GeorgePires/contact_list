@@ -22,6 +22,22 @@ $links-color: #0a548cfc;
   background-color: $header-color;
 }
 
+.row {
+  display: flex;
+  flex-wrap: nowrap;
+  margin-right: 0px; 
+  margin-left: 0px; 
+  flex-direction: column;
+  align-content: center; 
+  justify-content: center; 
+  align-items: center;
+}
+
+.col-lg-8 {
+  flex: 0 0 66.6666666667%;
+  max-width: 100%;
+}
+
 .mb-3.form-check  input {
   margin-top: 30px;
 }
