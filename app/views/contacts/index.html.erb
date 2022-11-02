@@ -1,6 +1,9 @@
 <br>
 <section>
-  <h1>My Contacts</h1>
+  <div class="table-title">
+    <h1>My Contacts</h1>
+    <%= link_to 'New Contact', new_contact_path, class: 'btn btn-primary' %>
+  </div>
   <table class="table align-middle mb-0 bg-white">
     <thead class="bg-light">
       <tr>
@@ -13,7 +16,7 @@
     <tbody>
       <% @contacts.each do |contact| %>
         <tr>
-          <td><%= image_tag(contact.try(:avatar_url), size: "55x55") if contact.avatar? %></td>
+          <td><%= image_tag(contact.try(:avatar_url), class: "img-avatar") if contact.avatar? %></td>
           <td><%= contact.try(:name) %></td>
           <td><%= contact.try(:phone) %></td>
           <td>
@@ -34,4 +37,4 @@
   </table>
   <%= paginate @contacts %>
 </section>
-<%= link_to 'New Contact', new_contact_path, class: 'btn btn-primary' %>
+
