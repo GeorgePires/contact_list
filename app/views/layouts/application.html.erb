@@ -10,12 +10,11 @@
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
-
   <body>
     <%= render 'layouts/header' %>
 
-      <div class="container">
-        <% flash.each do |message_type, message| %>
+    <div class="container">
+      <% flash.each do |message_type, message| %>
         <%= content_tag 'div', class: "alert alert-success alert-dismissible", role: 'alert' do %>
           <button type="button" class="close" data-dismiss="alert" aria-label="Close">
             <span aria-hidden="true">&times;</span>
@@ -25,8 +24,8 @@
       <% end %>
 
       <%= yield %>
-      <%= render 'layouts/footer' %>
 
+      <%= render 'layouts/footer' %>
     </div>
   </body>
 </html>
