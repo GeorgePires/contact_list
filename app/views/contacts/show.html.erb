@@ -1,4 +1,5 @@
 <div class="jumbotron">
+  <%= image_tag(@contact.try(:avatar_url), class: "img-avatar") if @contact.avatar? %>
   <p>
     <strong>Name:</strong>
     <%= @contact.name %>
