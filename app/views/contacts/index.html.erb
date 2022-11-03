@@ -20,10 +20,6 @@
           <td><%= contact.try(:name) %></td>
           <td><%= contact.try(:phone) %></td>
           <td>
-            <%= link_to '#', {"data-bs-toggle" => "modal",
-                         "data-bs-target" => "#Modal-", class: "btn btn-info btn-circle"} do %>
-              <i class="ti-gallery"></i>
-            <% end %>
             <%= link_to edit_contact_path(contact), class: "btn btn-warning btn-circle"  do %>
               <i class="ti-pencil-alt"></i>
             <% end %>

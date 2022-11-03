@@ -1,15 +1,12 @@
 <div class="jumbotron">
     <h1><%= image_tag ('profile.svg') %> <%= current_user.try(:name) %></h1>
-
     <p>
       Created with the intention of teaching a little about the Ruby on Rails Framework,
       Contact List will show you how to learn the pieces that make up this very
       powerful.
     </p>
-    <div class="row">
-        <div class="col-sm-3">
-          <p class="mb-0">Email: <%= current_user.try(:email) %></p>
-        </div>
-        <p class="mb-0">Created: <%= current_user.try(:created_at) %></p>
-      </div>
+    <div class="col-sm-3">
+      <p class="mb-0">Email: <%= current_user.try(:email) %></p>
+      <p class="mb-0">Created in: <%= current_user.try(:created_at).strftime("%m/%d/%Y") %></p>
+    </div>
   </div>
